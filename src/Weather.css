@@ -17,3 +17,21 @@ body {
             rgb(154, 192, 206) 100.2%
     );
 }
+
+.WeatherSearch {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.open-source {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 10px;
+}
+
