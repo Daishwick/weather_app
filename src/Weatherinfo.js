@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
             <li>humidity:{props.info.humidity}%</li>
             <li>
                 {" "}
-                <img src={props.info.icon} alt={props.info.description} />{" "}
+                <img src={props.info.icon} alt={props.info.description}/>{" "}
             </li>
         </ul>
     );
