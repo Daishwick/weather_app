@@ -5,7 +5,7 @@ export default function App() {
     return (
         <div className="App">
             <div className="weather-container" id="weather">
-                <Weather/>
+                <Weather defaultCity="New York"/>
             </div>
             <footer className="source-code">
                 <a href="https://github.com/Daishwick/weather_app" target="_blank">
