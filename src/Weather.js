@@ -3,13 +3,18 @@ import axios from "axios";
 import "./Weather.css"
 
 export default function Weather() {
+    const apiKey="1887250fbd68c3f9205830915ce15b04\n";
+    let city="London"
+    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
     return (
+
+
         <div className="Weather">
             <form>
                 <div className="row">
                     <div className="col-9">
 
-                        <input type="search"
+                        <input type="search"npm
                                placeholder="Enter a city..."
                                className="form-control"
                                autoFocus="on"/>
