@@ -5,7 +5,6 @@ export default function App() {
     return (
         <div className="App">
             <div className="weather-container" id="weather">
-                <h1>The weather</h1>
                 <Weather/>
             </div>
             <footer className="source-code">
