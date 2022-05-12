@@ -8,7 +8,7 @@ export default function App() {
                 <Weather defaultCity="New York"/>
             </div>
             <footer className="source-code">
-                <a href="https://github.com/Daishwick/weather_app" target="_blank">
+                <a href="https://github.com/Daishwick/weather_app" target="noopener">
                     Open-source code
                 </a>, by
                 Jitske Riswick
