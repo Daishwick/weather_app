@@ -17,12 +17,12 @@
     font-size: 40px;
     font-weight: 100;
     line-height: 29px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 20px 0;
 }
 
 
 .Weather ul {
-    margin: 0;
+    margin: 0px 0 20px 0;
     padding: 0;
 }
 
@@ -36,17 +36,15 @@
 
 .Weather .temperature {
 
-    font-size: 64px;
+    font-size: 58px;
     line-height: 64px;
-    margin-left: 5px;
+    margin-left: 15px;
     font-weight: 400;
 
 
 }
 .Weather canvas{
-
-    margin: 10px auto;
-
+    margin: 10px 0 0 10px;
 }
 
 
@@ -57,4 +55,8 @@
     position: relative;
     line-height: 1;
     top: -34px;
+}
+
+.Weather .humidityWind {
+    margin-left: 100px;
 }
