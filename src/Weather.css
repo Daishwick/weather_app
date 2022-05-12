@@ -1,31 +1,10 @@
-.weather {
-    font-family: "Poppins", sans-serif;
-}
-
-h1 {
-    color: black;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 29px;
-    text-align: center;
-    padding: 0;
-}
-
-p {
-    font-size: 10px;
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-.weather-container {
+.Weather {
     font-family: "Poppins", sans-serif;
     border-radius: 4px;
+    padding:16px;
     box-shadow: 5px 5px 10px rgba(4, 51, 12, 0.4);
     color: aliceblue;
-    position: relative;
+    /*position: relative;*/
     background: radial-gradient(
             506px at 50.6% 16.5%,
             rgb(183, 218, 223) 5.5%,
@@ -34,19 +13,38 @@ p {
 }
 
 
-form {
+.Weather h1 {
+    color: black;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 29px;
     text-align: center;
-    width: 400px;
-    margin: 0 auto;
-    padding: 40px;
+    padding: 0;
 }
 
-ul {
+.Weather p {
+    font-size: 10px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+/*form {*/
+/*    text-align: center;*/
+/*    width: 400px;*/
+/*    margin: 0 auto;*/
+/*    padding: 40px;*/
+/*}*/
+
+.Weather ul {
     margin: 0;
     padding: 0;
 }
 
-li {
+.Weather li {
     font-size: 16px;
     font-weight: 100;
     line-height: 29px;
@@ -55,10 +53,10 @@ li {
 }
 .Weather canvas{
     /*vertical-align: sub;*/
-    margin-right: 5px;
+    margin: 10px auto;
     /*height: 64px;*/
     /*width: 64px;*/
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .Weather .temperature {
@@ -66,22 +64,33 @@ li {
     color: black;
     font-size: 64px;
     line-height: 64px;
+    margin-left: 5px;
     font-weight: 400;
+    /*margin-left: 10px;*/
 
-}
-.clearfix:after {
-    display: block;
-    clear: both;
-    content: "";
 }
 
 .Weather .unit {
+    color: rgb(33, 33, 33);
     font-size: 16px;
     font-weight: 400;
     position: relative;
     line-height: 1;
-    top: -32px;
-    margin-left: -15px;
+    top: -34px;
 }
+/*.clearfix:after {*/
+/*    display: block;*/
+/*    clear: both;*/
+/*    content: "";*/
+/*}*/
+
+/*.Weather .unit {*/
+/*    font-size: 16px;*/
+/*    font-weight: 400;*/
+/*    position: relative;*/
+/*    line-height: 1;*/
+/*    top: -32px;*/
+/*    margin-left: -15px;*/
+/*}*/
 
 
