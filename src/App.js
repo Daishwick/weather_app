@@ -6,13 +6,13 @@ export default function App() {
         <div className="App">
             <div className="weather-container" id="weather">
                 <Weather defaultCity="New York"/>
+                <footer className="source-code">
+                    <a href="https://github.com/Daishwick/weather_app" target="noopener">
+                        Open-source code
+                    </a>, by
+                    Jitske Riswick
+                </footer>
             </div>
-            <footer className="source-code">
-                <a href="https://github.com/Daishwick/weather_app" target="noopener">
-                    Open-source code
-                </a>, by
-                Jitske Riswick
-            </footer>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from "react";
+import React, {useEffect, useState} from "react";
 import "./WeatherForecast.css";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
@@ -7,7 +7,7 @@ export default function WeatherForecast(props) {
     let [loaded, setLoaded] = useState(false);
     let [forecast, setForecast] = useState(null);
 
-    useEffect(() =>{
+    useEffect(() => {
         setLoaded(false);
     }, [props.coordinates]);
 
@@ -16,14 +16,22 @@ export default function WeatherForecast(props) {
         setLoaded(true);
     }
 
+    function load() {
+        let apiKey = "ca5f6e4c2919f8a0481d18dad1df2625";
+        let longitude = props.coordinates.lon;
+        let latitude = props.coordinates.lat;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+        axios.get(apiUrl).then(handleResponse);
+    }
+
     if (loaded) {
         return (
             <div className="WeatherForecast">
                 <div className="row">
                     {forecast.map(function (dailyForecast, index) {
-                        if (index < 5) {
+                        if (index < 4) {
                             return (
-                                <div className="col-6" key={index}>
+                                <div className="col-3" key={index}>
                                     <WeatherForecastDay data={dailyForecast}/>
 
                                 </div>
@@ -37,11 +45,7 @@ export default function WeatherForecast(props) {
             </div>
         );
     } else {
-        let apiKey = "ca5f6e4c2919f8a0481d18dad1df2625";
-        let longitude = props.coordinates.lon;
-        let latitude = props.coordinates.lat;
-        let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-        axios.get(apiUrl).then(handleResponse);
+        load();
 
         return null;
     }
