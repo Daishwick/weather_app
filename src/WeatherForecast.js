@@ -6,12 +6,11 @@ import axios from "axios";
 export default function WeatherForecast(props) {
     function handleResponse(response) {
     }
-console.log(props);
 
     let apiKey = "ca5f6e4c2919f8a0481d18dad1df2625";
-    let longitude = 40.7;
-    let latitude = 74;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}$units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
 
